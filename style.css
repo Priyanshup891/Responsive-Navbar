@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body {
+    background-color: rgb(174, 255, 255);
+}
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(230, 255, 251);
+    padding: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.233);
+}
+#logo {
+    font-size: 25px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.719);
+    margin: 0px 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#navLinks {
+    list-style: none;
+}
+#navLinks li {
+    display: inline-block;
+}
+#navLinks li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin: 0px 10px;
+    padding: 6px 20px;
+    transition: 0.3s ease;
+}
+#navLinks li a:hover {
+    background-color: black;
+    color: white;
+}
+#menuToggle {
+    font-size: 30px;
+    opacity: 0.7;
+    margin: 0px 30px;
+    display: none;
+}
+#close {
+    position: absolute;
+    right: 0;
+    margin: 0px 40px;
+    font-size: 30px;
+    opacity: 0.7;
+    display: none;
+}
+h1 {
+    text-align: center;
+    margin-top: 300px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: rgb(81, 255, 241);
+}
+
+@media only screen and (max-width: 1000px) {
+    #navLinks li {
+        display: block;
+        padding: 10px 20px;
+    }
+    #navLinks {
+        position: absolute;
+        background-color: rgb(119, 255, 248);
+        width: 100%;
+        right: 0;
+        top: -260px;
+        text-align: center;
+        padding: 20px;
+        transition: 0.3s ease;
+        z-index: 1;
+    }
+    #navLinks ul li a{
+        color: white;
+    }
+    #menuToggle {
+        display: block;
+        
+    }
+    #close {
+        display: block;
+    }
+}
